@@ -2,7 +2,9 @@
 📄 Project Overview | نبذة عن المشروع
 [English]
 This project focuses on predicting whether a bank customer will stay or leave the bank (churn) based on demographic and financial data. The goal is to help the bank take proactive measures to retain customers. The project covers the entire data science pipeline from EDA to model deployment selection.
-
+[العربية]
+يركز هذا المشروع على التنبؤ ما إذا كان عميل البنك سيستمر أو سيغادر (Churn) بناءً على بيانات ديموغرافية ومالية. الهدف هو مساعدة البنك على اتخاذ إجراءات استباقية للحفاظ على العملاء. يغطي المشروع جميع مراحل علم البيانات من الاستكشاف وحتى اختيار النموذج الأنسب.
+🛠️ Tools & Technologies | الأدوات والتقنيات
 Language: Python 🐍
 Data Manipulation: Pandas, NumPy
 Visualization: Matplotlib, Seaborn
