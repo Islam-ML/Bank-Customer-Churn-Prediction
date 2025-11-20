@@ -1,25 +1,59 @@
-🏦 Bank Customer Churn Prediction
-📄 Project Overview | نبذة عن المشروع
-[English]
-This project focuses on predicting whether a bank customer will stay or leave the bank (churn) based on demographic and financial data. The goal is to help the bank take proactive measures to retain customers. The project covers the entire data science pipeline from EDA to model deployment selection.
-[العربية]
-يركز هذا المشروع على التنبؤ ما إذا كان عميل البنك سيستمر أو سيغادر (Churn) بناءً على بيانات ديموغرافية ومالية. الهدف هو مساعدة البنك على اتخاذ إجراءات استباقية للحفاظ على العملاء. يغطي المشروع جميع مراحل علم البيانات من الاستكشاف وحتى اختيار النموذج الأنسب.
-🛠️ Tools & Technologies | الأدوات والتقنيات
-Language: Python 🐍
-Data Manipulation: Pandas, NumPy
-Visualization: Matplotlib, Seaborn
-Machine Learning: Scikit-Learn, XGBoost
-Deep Learning: TensorFlow / Keras (ANN)
-Imbalance Handling: SMOTE (Synthetic Minority Over-sampling Technique)
-🔍 Key Steps | الخطوات الرئيسية
-Exploratory Data Analysis (EDA): Analyzing correlations and feature distributions.
-Data Preprocessing: Handling missing values, One-Hot Encoding for categorical features, and StandardScaler.
-Model Training: Implementing and comparing 5 algorithms:
-Artificial Neural Networks (ANN)
-Logistic Regression
-Random Forest
-Support Vector Machine (SVM)
-XGBoost Classifier
-Handling Imbalance: Applied SMOTE to improve recall for the minority class.
-🏆 Results | النتائج
-After extensive testing and hyperparameter comparison, the XGBoost Classifier achieved the best balance between accuracy and recall, making it the selected model for this problem with an accuracy of ~86.95%.
+# 🏦 Bank Customer Churn Prediction
+
+## 📖 Project Overview | نبذة عن المشروع
+
+**[English]**
+Customer churn is a critical metric for banking institutions. This project aims to build a robust Machine Learning model to predict whether a customer will leave the bank based on their demographic and financial data. By identifying at-risk customers early, the bank can implement retention strategies to reduce losses.
+
+**[العربية]**
+تعتبر مغادرة العملاء (Churn) من أهم التحديات التي تواجه المؤسسات البنكية. يهدف هذا المشروع إلى بناء نموذج تعلم آلي قوي للتنبؤ بما إذا كان العميل سيترك البنك بناءً على بياناته الديموغرافية والمالية. يساعد هذا النموذج البنك على تحديد العملاء المعرضين للمغادرة واتخاذ إجراءات استباقية للحفاظ عليهم.
+
+---
+
+## 🛠️ Tech Stack | الأدوات والتقنيات
+
+The project utilizes a comprehensive stack of Data Science tools:
+
+*   **Data Manipulation:** `Pandas`, `NumPy`
+*   **Visualization:** `Matplotlib`, `Seaborn`
+*   **Machine Learning:** `Scikit-Learn`, `XGBoost`, `SVM`, `Random Forest`
+*   **Deep Learning:** `TensorFlow / Keras (ANN)`
+*   **Imbalance Handling:** `SMOTE` (Synthetic Minority Over-sampling Technique)
+
+---
+
+## 📊 Methodology | منهجية العمل
+
+1.  **Exploratory Data Analysis (EDA):** Analyzing feature distributions and correlations (Heatmaps) to understand churn drivers.
+2.  **Data Preprocessing:**
+    *   Handling missing values (if any).
+    *   **One-Hot Encoding** for categorical features (Geography, Gender).
+    *   **Feature Scaling** using `StandardScaler`.
+3.  **Model Development:** Training and evaluating 5 different models.
+4.  **Handling Class Imbalance:** Applying **SMOTE** to improve recall for the minority class (Churners).
+5.  **Evaluation:** Comparing models based on Accuracy, Precision, Recall, and F1-Score.
+
+---
+
+## 🏆 Model Performance & Results | النتائج والأداء
+
+After extensive experimentation, we compared the models' performance on the test set. The **XGBoost Classifier** proved to be the most balanced model.
+
+| Model | Accuracy | Precision (Class 1) | Recall (Class 1) | Verdict |
+| :--- | :---: | :---: | :---: | :--- |
+| **XGBoost (Winner)** 🥇 | **86.95%** | **High** | **Balanced** | **Best Overall Performance** |
+| Random Forest | 86.65% | High | Moderate | Strong Contender |
+| ANN (Deep Learning) | 86.30% | Moderate | Moderate | Good Baseline |
+| SVM | 85.60% | High | Low | Good Precision, Low Recall |
+| Logistic Regression | 81.10% | Low | Low | Underperformed |
+
+> **Note:** While applying **SMOTE** significantly increased the *Recall* (ability to find churners), it slightly reduced the overall *Accuracy*. The standard XGBoost model offered the best trade-off for this specific business case.
+
+---
+
+## 📈 Visualizations | رسوم بيانية
+
+*(You can add screenshots of your plots here, e.g., Correlation Heatmap or XGBoost Learning Curve)*
+
+*   **Correlation Heatmap:** To show relationships between features.
+*   **XGBoost Learning Curve:** Demonstrating the reduction of Log Loss over training rounds.
