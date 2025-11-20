@@ -52,7 +52,5 @@ After extensive experimentation, we compared the models' performance on the test
 
 ## 📈 Visualizations | رسوم بيانية
 
-*(You can add screenshots of your plots here, e.g., Correlation Heatmap or XGBoost Learning Curve)*
-
 *   **Correlation Heatmap:** To show relationships between features.
 *   **XGBoost Learning Curve:** Demonstrating the reduction of Log Loss over training rounds.
