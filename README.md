@@ -2,10 +2,8 @@
 
 ## 📖 Project Overview | نبذة عن المشروع
 
-**[English]**
 Customer churn is a critical metric for banking institutions. This project aims to build a robust Machine Learning model to predict whether a customer will leave the bank based on their demographic and financial data. By identifying at-risk customers early, the bank can implement retention strategies to reduce losses.
-
-**[العربية]**
+**
 تعتبر مغادرة العملاء (Churn) من أهم التحديات التي تواجه المؤسسات البنكية. يهدف هذا المشروع إلى بناء نموذج تعلم آلي قوي للتنبؤ بما إذا كان العميل سيترك البنك بناءً على بياناته الديموغرافية والمالية. يساعد هذا النموذج البنك على تحديد العملاء المعرضين للمغادرة واتخاذ إجراءات استباقية للحفاظ عليهم.
 
 ---
